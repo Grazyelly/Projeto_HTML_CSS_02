@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  /*degrade no final da pagina*/
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+  /*propredade de altura*/
+  /*vh - e toda area visivel disponivel na tela*/
+  min-height: 100vh;
+}
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a {
+  color: #1F1534;
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* pseudo class, sempre que usar o houver vai mudar alguma coisa, nesse caso a fonte*/
+ul li a:hover {
+  font-weight: bold;
+}
+
+h1, ul {
+  font-family: 'Mulish', sans-serif;
+}
+/*Comando para deixa o que esta escrito ao lado da imagem*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: black;
+
+  font-weight: normal;
+
+  width: 490px;
+}
+
+h1 span {
+  color: #86C5CC;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  /*40 em cima 40 em baixo e 0 nas laterai*/
+  margin: 40px 0;
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+
+  /*propriedade usada para colocar cores e imagenss de fundo numa caixa (nesse caso dentro da caixinha do whats)*/
+  background: #69B99D;
+  /*para tirara a borda - border none*/
+  border: none;
+  padding: 14px 32px 15px;
+
+  /*alinhar*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*espaço entre a imagem é o que esta escrito*/
+  gap: 10px;
+
+  /*borda arredondada*/
+  border-radius: 4px;
+
+  /*mãozinha que aparece quando vamos clicar*/
+  cursor: pointer;
+
+}
+/*para quando voce passar o mouse em cima aparecer mais escurinho*/
+button:hover {
+  background: #3ba37f;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  /*para alinhar o texto no meio*/  
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
